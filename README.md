@@ -28,7 +28,7 @@ The system is designed as a full-stack application integrating hardware, machine
 - **EEG Signal Acquisition:** EEG hardware captures raw neural signals representing imagined speech commands.
 - **Backend Processing:** FastAPI backend receives EEG data streams and preprocesses signals.
 - **Machine Learning Model:** EEGAutoencoderClassifier predicts multi-class speech commands in real time.
-- **Frontend Interface:** Angular frontend includes a patient interface to capture EEG commands and a doctor dashboard that displays real-time decoded messages from each associated patient, enabling direct non-verbal communication.
+- **Frontend Interface:** Angular frontend includes a patient interface to capture EEG commands and a *doctor dashboard* that displays real-time decoded messages from each associated patient, enabling direct non-verbal communication.
 - **Data Management:** MongoDB stores EEG session logs, user profiles, and prediction results.
 - **API Layer:** RESTful APIs facilitate communication between frontend and backend.
 
@@ -80,7 +80,7 @@ pip install fastapi uvicorn pydantic
 Please download all the required .json files and the trained .pt model from the following Google Drive link:
 [EEG Model Assets]( https://drive.google.com/drive/u/1/folders/1u6sAHUsmFOJ8-OoI3KAqkGMXaVTUjthR)
 
-Place all downloaded files inside the model/ directory to ensure the FastAPI model server runs smoothly.
+Place all downloaded files inside the `model/` directory to ensure the FastAPI model server runs smoothly.
 
 ### Model Deployment
 1. Navigate to the `model` directory
